@@ -15,14 +15,16 @@
 
 <body>
     <div class="container">
-        <div class="row containerstyleme">
+        <div class="row styleme bg-primary">
             <h1>The Project Picker</h1>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <h3>Instructions</h3>
+            <div class="col-6 bg-warning">
+                <h3 class="text-light bg-dark">Instructions</h3>
+                <p class="badge bg-primary text-wrap">Click teh button below to open a form and provide information for the following:</p> -->
+
                 <form id="projectPicker">
                     <div class="row py-3">
                         <label for="projectName" class="col-sm-4 col-form-label">Project Name:</label>
@@ -49,12 +51,10 @@
                     </div>
                 </form>
             </div>
-            <!-- <p class="instructions">Click teh button below to open a form and provide information for the following:</p> -->
-            <!-- <div id="selectedProjects">PutSelectionsHere</div> -->
-            <div class="col-6">
-                <h3>List of Skills:</h3>
+            <div class="col-6 bg-success">
+                <h3 class="text-white bg-dark">List of Projects:</h3>
                 <div class="py-3">
-                    <ul class="list-group" id="skills-list"></ul>
+                    <ul class="list-group" id="listProjects"></ul>
                 </div>
             </div>
         </div>
