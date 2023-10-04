@@ -18,38 +18,45 @@
         <div class="row containerstyleme">
             <h1>The Project Picker</h1>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
-            <h3>Instructions</h3>
-
-            <div>Instructions</div>
-            <form id="projectPicker">
-                <div class="row py-3">
-                    <label for="projectName" class="col-sm-4 col-form-label">Project Name:</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="project-name" />
+            <div class="col-6">
+                <h3>Instructions</h3>
+                <form id="projectPicker">
+                    <div class="row py-3">
+                        <label for="projectName" class="col-sm-4 col-form-label">Project Name:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="project-name" />
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <label for="projectName" class="col-sm-4 col-form-label">Project Type:</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="project-type" />
+                    <div class="row py-3">
+                        <label for="projectName" class="col-sm-4 col-form-label">Project Type:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="project-type" />
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <label for="date" class="col-sm-4 col-form-label">Due Date: </label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+                    <div class="row py-3">
+                        <label for="date" class="col-sm-4 col-form-label">Due Date: </label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+                        </div>
                     </div>
-                </div>
+                    <div class="py-3">
+                        <button type="submit" value="Submit" class="btn btn-info">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- <p class="instructions">Click teh button below to open a form and provide information for the following:</p> -->
+            <!-- <div id="selectedProjects">PutSelectionsHere</div> -->
+            <div class="col-6">
+                <h3>List of Skills:</h3>
                 <div class="py-3">
-                    <button type="submit" value="Submit" class="btn btn-info">
-                        Submit
-                    </button>
+                    <ul class="list-group" id="skills-list"></ul>
                 </div>
-            </form>
-            <p class="instructions">Click teh button below to open a form and provide information for the following:</p>
-            <div id="selectedProjects">PutSelectionsHere</div>
-
+            </div>
         </div>
     </div>
 </body>
